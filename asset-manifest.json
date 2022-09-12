@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/ReactDeploy/static/css/main.b6aa98c8.chunk.css",
+    "main.js": "/ReactDeploy/static/js/main.d0c2c76f.chunk.js",
+    "main.js.map": "/ReactDeploy/static/js/main.d0c2c76f.chunk.js.map",
+    "runtime-main.js": "/ReactDeploy/static/js/runtime-main.510a8655.js",
+    "runtime-main.js.map": "/ReactDeploy/static/js/runtime-main.510a8655.js.map",
+    "static/js/2.b9a02320.chunk.js": "/ReactDeploy/static/js/2.b9a02320.chunk.js",
+    "static/js/2.b9a02320.chunk.js.map": "/ReactDeploy/static/js/2.b9a02320.chunk.js.map",
+    "static/js/3.2fe1de65.chunk.js": "/ReactDeploy/static/js/3.2fe1de65.chunk.js",
+    "static/js/3.2fe1de65.chunk.js.map": "/ReactDeploy/static/js/3.2fe1de65.chunk.js.map",
+    "index.html": "/ReactDeploy/index.html",
+    "static/css/main.b6aa98c8.chunk.css.map": "/ReactDeploy/static/css/main.b6aa98c8.chunk.css.map",
+    "static/js/2.b9a02320.chunk.js.LICENSE.txt": "/ReactDeploy/static/js/2.b9a02320.chunk.js.LICENSE.txt",
+    "static/media/alchemylogo.9821dc1c.svg": "/ReactDeploy/static/media/alchemylogo.9821dc1c.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.510a8655.js",
+    "static/js/2.b9a02320.chunk.js",
+    "static/css/main.b6aa98c8.chunk.css",
+    "static/js/main.d0c2c76f.chunk.js"
+  ]
+}
