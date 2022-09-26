@@ -100,7 +100,7 @@ const HelloWorld = () => {
             </button>
 
             <h2 style={{ paddingTop: "50px" }}>Progress:</h2>
-            {/*<p>{message}</p>*/}
+            {/*<p>{message} </p>*/}
             {/*<img src={logo}/>*/}
 
 
@@ -114,6 +114,7 @@ const HelloWorld = () => {
                     value={newMessage}
                 />
                 {/*<p id="status">{status}</p>*/}
+                <p>You donated: {message} Ether</p>
 
                 <button id="publish" onClick={onUpdatePressed}>
                     Donate
