@@ -70,6 +70,7 @@ button {
   min-width: 160px;
   margin-top: 70px;
   font-family: Rubik, sans-serif;
+  display: inline-block;
 }
 
 #logo {

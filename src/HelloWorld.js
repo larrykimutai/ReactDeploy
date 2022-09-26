@@ -8,6 +8,8 @@ import {
     getCurrentWalletConnected,
 } from "./util/interact.js";
 
+
+
 import alchemylogo from "./alchemylogo.svg";
 
 const HelloWorld = () => {
@@ -80,10 +82,12 @@ const HelloWorld = () => {
         setStatus(status);
     };
 
+
+
     //the UI of our component
     return (
         <div id="container">
-            <img id="logo" src={alchemylogo}></img>
+            {/*<img id="logo" src={alchemylogo}></img>*/}
             <button id="walletButton" onClick={connectWalletPressed}>
                 {walletAddress.length > 0 ? (
                     "Connected: " +
@@ -95,23 +99,29 @@ const HelloWorld = () => {
                 )}
             </button>
 
-            <h2 style={{ paddingTop: "50px" }}>Current Message:</h2>
-            <p>{message}</p>
+            <h2 style={{ paddingTop: "50px" }}>Progress:</h2>
+            {/*<p>{message}</p>*/}
+            {/*<img src={logo}/>*/}
 
-            <h2 style={{ paddingTop: "18px" }}>New Message:</h2>
+
+            <h2 style={{ paddingTop: "18px" }}>Enter Amount:</h2>
 
             <div>
                 <input
                     type="text"
-                    placeholder="Update the message in your smart contract."
+                    placeholder="Enter amount in Ether."
                     onChange={(e) => setNewMessage(e.target.value)}
                     value={newMessage}
                 />
-                <p id="status">{status}</p>
+                {/*<p id="status">{status}</p>*/}
 
                 <button id="publish" onClick={onUpdatePressed}>
-                    Update
+                    Donate
                 </button>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <button id="publish">Approve</button>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <button id="publish">Deny</button>
             </div>
         </div>
     );
