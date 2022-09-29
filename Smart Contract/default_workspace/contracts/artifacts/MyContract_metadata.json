@@ -76,6 +76,11 @@
 					},
 					{
 						"internalType": "uint256",
+						"name": "returnable",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
 						"name": "donorListPointer",
 						"type": "uint256"
 					}
@@ -101,7 +106,7 @@
 				"name": "donorList",
 				"outputs": [
 					{
-						"internalType": "address",
+						"internalType": "address payable",
 						"name": "",
 						"type": "address"
 					}
@@ -165,11 +170,11 @@
 	},
 	"sources": {
 		"contracts/senior project.sol": {
-			"keccak256": "0x085de2c782405f1bebaa4d2e5b2bf4aab35c8af438b5c77a6f296997e4284f46",
+			"keccak256": "0x361128edd0ec8e50cdba11c6428141d25187189f485b90c86ef7d1a792291810",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://d542aea5debd05f102448ad9cb9fee1f6f34a0d36a4b688a80ef5e8a3c4af3a3",
-				"dweb:/ipfs/QmbDoysYqCwCrtJH8BZnk9Udr27c1jFxbfy6x6BHGkqwyJ"
+				"bzz-raw://950b9e307bcf39c8a7f302c2e692fba29a8e429b7fabac6cedc4cc39793edf06",
+				"dweb:/ipfs/QmQjXcp2gqvEpZvSGxrUHGJJ7TpEfE3p5HkGa7cLo3YAdv"
 			]
 		}
 	},
