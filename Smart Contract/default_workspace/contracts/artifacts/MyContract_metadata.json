@@ -11,6 +11,11 @@
 						"internalType": "address payable",
 						"name": "_wallet",
 						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "numWeeks",
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "nonpayable",
@@ -53,6 +58,13 @@
 				],
 				"name": "LogReturnedFunds",
 				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "approval",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
 			},
 			{
 				"inputs": [
@@ -116,27 +128,21 @@
 			},
 			{
 				"inputs": [],
-				"name": "getDonorCount",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "donorCount",
-						"type": "uint256"
-					}
-				],
+				"name": "sendFunds",
+				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "returnFunds",
+				"name": "singleRefund",
 				"outputs": [],
-				"stateMutability": "payable",
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "sendFunds",
+				"name": "timeExpired",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -170,11 +176,11 @@
 	},
 	"sources": {
 		"contracts/senior project.sol": {
-			"keccak256": "0x361128edd0ec8e50cdba11c6428141d25187189f485b90c86ef7d1a792291810",
+			"keccak256": "0xcfe9a823b7bbbc78726307761195d074006b5ccaa5b63c9cd2481dae92e7ac1f",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://950b9e307bcf39c8a7f302c2e692fba29a8e429b7fabac6cedc4cc39793edf06",
-				"dweb:/ipfs/QmQjXcp2gqvEpZvSGxrUHGJJ7TpEfE3p5HkGa7cLo3YAdv"
+				"bzz-raw://1e81275bcb431557d7a46337656eddce78971e4a406b739b7345a453ed66757b",
+				"dweb:/ipfs/QmYBt7JddayYQRzrxreXbbXYzHyNqf8TmAvbFPiubA6Nw7"
 			]
 		}
 	},
