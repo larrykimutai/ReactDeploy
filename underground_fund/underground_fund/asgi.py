@@ -1,5 +1,5 @@
 """
-ASGI config for underground_fund project.
+ASGI config for Underground_Fund project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 

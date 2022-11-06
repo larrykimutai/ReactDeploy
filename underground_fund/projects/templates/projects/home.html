@@ -1,0 +1,60 @@
+{% extends "projects/base.html" %}
+
+{%block page%}
+           <h1 class="text-white center">Underground <span class="text-success">Fund</span> </h1>
+{%endblock%}
+{% block content %}
+<!-- boxes -->
+<section class="p-5">
+    <div class="container-fluid">
+        <div class="col-md">
+            <div>
+                <h2 class="text-center text-light"> About Us</h2>
+                <p class="text-secondary">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                    when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not
+                    only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                    release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
+                    PageMaker including versions of Lorem Ipsum. </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="p-5 bg-secondary">
+    <div class="container-fluid">
+        <div class="col-md">
+            <div>
+                <h2 class="text-center text-dark">Find Projects</h2>
+                <p class="text-light">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                    when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not
+                    only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                    release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
+                    PageMaker including versions of Lorem Ipsum. </p>
+                <div class="d-grid gap-2 col-6 mx-auto">
+                    <a class="btn btn-success btn-lg" href="{%url 'project-view'%}">
+                    <btn type="button" >Start searching</btn>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        <section class="p-5">
+        <div class="container-fluid">
+        <div class="col-md">
+            <div>
+                <h2 class="text-center text-light">Create Project</h2>
+                <p class="text-secondary">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                    when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not
+                    only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                    release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
+                    PageMaker including versions of Lorem Ipsum. </p>
+                <div class="d-grid gap-2 col-6 mx-auto">
+                    <a href = "{%url 'project-create'%}"class="btn btn-success btn-lg">
+                    <btn type="button" >Create Project</btn>
+                    </a>
+                </div>
+            </div>
+        </div>
+        </div>
+</section>
+{% endblock content %}

@@ -1,0 +1,16 @@
+{% extends "projects/base.html" %}
+{% block content %}
+        <article class="media content-section section-1-container section-container pad text-center">
+          <div class="media-body bg-secondary">
+            <div class="article-metadata">
+              <a class="mr-2" href="#">{{ object.author }}</a>
+              <small class="dc">{{ object.date_posted|date:"F d, Y" }}</small>
+            </div>
+            <h2><a class="article-title" href="#">{{ object.title }}</a></h2>
+            <p class="article-content">{{ object.description }}</p>
+          </div>
+          <a href = "#"class="btn btn-success btn-lg">
+          <btn type="button" >Donate</btn>
+          </a>
+        </article>
+{% endblock content%}
