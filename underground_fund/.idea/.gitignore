@@ -1,4 +1,5 @@
 # Default ignored files
+from
 /shelf/
-/workspace.xml
-/.env
+/underground_fund/.idea/workspace.xml
+../../../.env
