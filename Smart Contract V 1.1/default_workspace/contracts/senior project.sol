@@ -35,6 +35,7 @@ contract MyContract{
         }
     */
 
+    //sends ethereum into the smart contract to be held 
     function donate() public payable{
         balances[msg.sender].totalDono += msg.value;
         balances[msg.sender].returnable += msg.value;
@@ -70,12 +71,23 @@ contract MyContract{
             }
         }
     
-    function approval() private{       
+    function approval() public{       
       require(msg.sender == wallet);
         approved = true;
     }
 
-    function timeExpired() public {
+    //this counter is used to only allow one extension
+    uint EXcounter =0;
+    //this function can be used to extend the project deadline once
+    function extendTime() public {
+        require(msg.sender == wallet);
+        if(EXcounter == 0){
+        deadline + 3;
+        EXcounter++;
+        }
+    }
+
+    function timeExpired() private {
         //checks if the time expired and the creator uploaded proof of work
         if(block.timestamp >= (deployDate + (deadline * 1 weeks))
         && approved == true){

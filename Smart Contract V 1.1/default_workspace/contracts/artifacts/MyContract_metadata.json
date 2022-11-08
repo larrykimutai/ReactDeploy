@@ -128,6 +128,13 @@
 			},
 			{
 				"inputs": [],
+				"name": "extendTime",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "sendFunds",
 				"outputs": [],
 				"stateMutability": "nonpayable",
@@ -136,13 +143,6 @@
 			{
 				"inputs": [],
 				"name": "singleRefund",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "timeExpired",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -176,11 +176,11 @@
 	},
 	"sources": {
 		"contracts/senior project.sol": {
-			"keccak256": "0xcfe9a823b7bbbc78726307761195d074006b5ccaa5b63c9cd2481dae92e7ac1f",
+			"keccak256": "0xc5fe7c63cd31e8e3c915126b27afd4ab5430e1250f3d836eb55315fe42103b47",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://1e81275bcb431557d7a46337656eddce78971e4a406b739b7345a453ed66757b",
-				"dweb:/ipfs/QmYBt7JddayYQRzrxreXbbXYzHyNqf8TmAvbFPiubA6Nw7"
+				"bzz-raw://b44a7952cce714f1978ac1a5a6163b29395803be07af74f4a7770618141440f6",
+				"dweb:/ipfs/QmdmBa8pgYRnN1oRjnVnJ32rrnSZcdNVor3ZDephduuwvk"
 			]
 		}
 	},
