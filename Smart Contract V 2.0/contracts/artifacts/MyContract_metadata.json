@@ -146,6 +146,19 @@
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "wallet",
+				"outputs": [
+					{
+						"internalType": "address payable",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -176,11 +189,11 @@
 	},
 	"sources": {
 		"contracts/senior project.sol": {
-			"keccak256": "0xc5fe7c63cd31e8e3c915126b27afd4ab5430e1250f3d836eb55315fe42103b47",
+			"keccak256": "0x0713b103128976308ead4f2bc2edcfd8967cdd9ca5efe0653c245cfc9869d33e",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://b44a7952cce714f1978ac1a5a6163b29395803be07af74f4a7770618141440f6",
-				"dweb:/ipfs/QmdmBa8pgYRnN1oRjnVnJ32rrnSZcdNVor3ZDephduuwvk"
+				"bzz-raw://c5b90572141589f5860e384c09400fcfcc49cbe25a2d8ceeedc99e6477b59485",
+				"dweb:/ipfs/QmVmgWuS3mAmkPK8baYXvkEwYLydNMfFZ7wda2EJYJYST6"
 			]
 		}
 	},

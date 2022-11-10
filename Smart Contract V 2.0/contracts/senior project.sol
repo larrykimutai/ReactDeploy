@@ -1,25 +1,24 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >= 0.5.1;
 
-contract MyContract{
-    address payable wallet;
+contract MyContract{ 
+    address payable public wallet;
     uint Dcounter;
     uint deployDate;//start date
     uint deadline;//the amount of weeks the project will take
     //this boolean represents user approval of work done
     bool approved = false;
 
-    constructor (address payable _wallet, uint numWeeks) {
-        wallet = _wallet;
+    constructor (address payable _wallet, uint numWeeks){
+         wallet = _wallet;
         deployDate = block.timestamp;
-        deadline = numWeeks;
+        deadline = numWeeks;  
     }
-
+     
     struct donor{
             uint totalDono;
             uint returnedDono;
             uint returnable;
-            uint donorListPointer;
     }
 
     mapping(address => donor) public balances;
@@ -27,19 +26,13 @@ contract MyContract{
 
     event LogReceivedFunds(address sender, uint amount);
     event LogReturnedFunds(address recipient, uint amount);
-/*
-    function getDonorCount()
-         public 
-        returns(uint donorCount){
-        return donorList.length;
-        }
-    */
+
+    
 
     //sends ethereum into the smart contract to be held 
     function donate() public payable{
         balances[msg.sender].totalDono += msg.value;
         balances[msg.sender].returnable += msg.value;
-        balances[msg.sender].donorListPointer = Dcounter++;
         donorList.push(payable(msg.sender));
         emit LogReceivedFunds(msg.sender, msg.value);
     }
@@ -99,6 +92,15 @@ contract MyContract{
             returnFunds();
     }
   }
-
+}
+  
+    contract Caller {
+        address []  public CreatorContracts;
+         function deploy(address payable _wallet, uint numWeeks) external  returns(address newCreator){
+            MyContract c = new MyContract(_wallet, numWeeks);
+            CreatorContracts.push(address(c));
+             return address(c);
+        }
 
 }
+
