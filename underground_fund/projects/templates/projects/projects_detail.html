@@ -3,14 +3,18 @@
         <article class="media content-section section-1-container section-container pad text-center">
           <div class="media-body bg-secondary">
             <div class="article-metadata">
-              <a class="mr-2" href="#">{{ object.author }}</a>
-              <small class="dc">{{ object.date_posted|date:"F d, Y" }}</small>
+              <a class="mr-2" href="#">{{ projects.author }}</a>
+              <small class="dc">{{ projects.date_posted|date:"F d, Y" }}</small>
             </div>
-            <h2><a class="article-title" href="#">{{ object.title }}</a></h2>
-            <p class="article-content">{{ object.description }}</p>
+            <h2><a class="article-title" href="#">{{ projects.title }}</a></h2>
+            <p class="article-content">{{ projects.description }}</p>
           </div>
           <a href = "#"class="btn btn-success btn-lg">
-          <btn type="button" >Donate</btn>
+            <btn type="button" >Donate</btn>
           </a>
-        </article>
+          </article>
+          {% for image in images %}
+            <img src="{{ image.image.url }}">
+          {% endfor %}
+
 {% endblock content%}

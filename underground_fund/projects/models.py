@@ -8,7 +8,6 @@ class Projects(models.Model):
     description = models.TextField()
     date_posted = models.DateTimeField(default=timezone.now)
     deadline = models.DateTimeField(default=timezone.now)
-    image = models.ImageField(default='default.jpg', upload_to='project_pics')
     author = models.ForeignKey(User, on_delete=models.CASCADE)
 
     def __str__(self):
@@ -16,5 +15,6 @@ class Projects(models.Model):
     def get_absolute_url(self):
         return reverse('project-detail', kwargs={'pk':self.pk})
 
-    
-
+class Image(models.Model):
+    project = models.ForeignKey(Projects, on_delete=models.CASCADE)
+    image = models.ImageField(default='default_project.jpg', upload_to='project_pics')
