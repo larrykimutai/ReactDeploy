@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/ReactDeploy/static/css/main.a1a041e7.chunk.css",
-    "main.js": "/ReactDeploy/static/js/main.5b0571a7.chunk.js",
-    "main.js.map": "/ReactDeploy/static/js/main.5b0571a7.chunk.js.map",
-    "runtime-main.js": "/ReactDeploy/static/js/runtime-main.510a8655.js",
-    "runtime-main.js.map": "/ReactDeploy/static/js/runtime-main.510a8655.js.map",
-    "static/js/2.b9a02320.chunk.js": "/ReactDeploy/static/js/2.b9a02320.chunk.js",
-    "static/js/2.b9a02320.chunk.js.map": "/ReactDeploy/static/js/2.b9a02320.chunk.js.map",
-    "static/js/3.2fe1de65.chunk.js": "/ReactDeploy/static/js/3.2fe1de65.chunk.js",
-    "static/js/3.2fe1de65.chunk.js.map": "/ReactDeploy/static/js/3.2fe1de65.chunk.js.map",
+    "main.css": "/ReactDeploy/static/css/main.0d385adf.chunk.css",
+    "main.js": "/ReactDeploy/static/js/main.3990a0e7.chunk.js",
+    "main.js.map": "/ReactDeploy/static/js/main.3990a0e7.chunk.js.map",
+    "runtime-main.js": "/ReactDeploy/static/js/runtime-main.eeffecf1.js",
+    "runtime-main.js.map": "/ReactDeploy/static/js/runtime-main.eeffecf1.js.map",
+    "static/js/2.eeeff9bb.chunk.js": "/ReactDeploy/static/js/2.eeeff9bb.chunk.js",
+    "static/js/2.eeeff9bb.chunk.js.map": "/ReactDeploy/static/js/2.eeeff9bb.chunk.js.map",
+    "static/js/3.9d3ac339.chunk.js": "/ReactDeploy/static/js/3.9d3ac339.chunk.js",
+    "static/js/3.9d3ac339.chunk.js.map": "/ReactDeploy/static/js/3.9d3ac339.chunk.js.map",
     "index.html": "/ReactDeploy/index.html",
-    "static/css/main.a1a041e7.chunk.css.map": "/ReactDeploy/static/css/main.a1a041e7.chunk.css.map",
-    "static/js/2.b9a02320.chunk.js.LICENSE.txt": "/ReactDeploy/static/js/2.b9a02320.chunk.js.LICENSE.txt",
+    "static/css/main.0d385adf.chunk.css.map": "/ReactDeploy/static/css/main.0d385adf.chunk.css.map",
+    "static/js/2.eeeff9bb.chunk.js.LICENSE.txt": "/ReactDeploy/static/js/2.eeeff9bb.chunk.js.LICENSE.txt",
     "static/media/alchemylogo.9821dc1c.svg": "/ReactDeploy/static/media/alchemylogo.9821dc1c.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.510a8655.js",
-    "static/js/2.b9a02320.chunk.js",
-    "static/css/main.a1a041e7.chunk.css",
-    "static/js/main.5b0571a7.chunk.js"
+    "static/js/runtime-main.eeffecf1.js",
+    "static/js/2.eeeff9bb.chunk.js",
+    "static/css/main.0d385adf.chunk.css",
+    "static/js/main.3990a0e7.chunk.js"
   ]
 }
