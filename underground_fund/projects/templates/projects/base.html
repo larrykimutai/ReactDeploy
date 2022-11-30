@@ -44,6 +44,17 @@
                     <a href="{%url 'register'%}" class="nav-link">Register</a>
                 </li>
                 {%endif%}
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link" onclick="connectWallet()">Connect Wallet</a>
+                    <script type="text/javascript">
+                        async function connectWallet(){
+                            const addressArray = await window.ethereum.request({
+                                method: "eth_requestAccounts",
+                            });
+                        }
+                    </script>
+                </li>
             </ul>
         </div>
     </nav>

@@ -14,7 +14,7 @@
   padding-bottom: 50px;
   padding-left: 80px;">
                             <form method="POST" class="bg-light" enctype='multipart/form-data'>
-            {%csrf_token%}
+                                {% csrf_token %}
             <fieldset class="form-group">
                 <legend class="border-bottom mb-4 p-2"> Project Post</legend>
                 {{ form|crispy }}
