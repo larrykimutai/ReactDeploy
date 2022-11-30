@@ -1,0 +1,22 @@
+{% extends "projects/base.html" %}
+{%block page%}
+           <h1 class="text-white center">Find <span class="text-success">Projects</span> </h1>
+{%endblock page%}
+{%block content%}
+    {% for post in posts %}
+        <article class="media content-section section-1-container section-container pad text-center">
+          <div class="media-body bg-secondary">
+            <div class="article-metadata">
+              <a class="mr-2" href="#">{{ post.author }}</a>
+              <small class="dc">{{ post.date_posted|date:"F d, Y" }}</small>
+            </div>
+            <h2><a class="article-title" href="{%url 'project-detail' post.id%}">{{ post.title }}</a></h2>
+            <p class="article-content">{{ post.description }}</p>
+          </div>
+          <a href = "#"class="btn btn-success btn-lg">
+          <btn type="button" >Donate</btn>
+          </a>
+        </article>
+    {% endfor %}
+{%endblock content%}
+

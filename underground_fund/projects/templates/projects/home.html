@@ -1,7 +1,7 @@
 {% extends "projects/base.html" %}
 
 {%block page%}
-<h1 class="text-white center">Underground <span class="text-success">Fund</span> </h1>
+           <h1 class="text-white center">Underground <span class="text-success">Fund</span> </h1>
 {%endblock%}
 {% block content %}
 <!-- boxes -->
@@ -31,21 +31,18 @@
                     PageMaker including versions of Lorem Ipsum. </p>
                 <div class="d-grid gap-2 col-6 mx-auto">
                     <a class="btn btn-success btn-lg" href="{%url 'project-view'%}">
-                        <btn type="button" >Start searching</btn>
+                    <btn type="button" >Start searching</btn>
                     </a>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<section class="p-5">
-    <div class="container-fluid">
+        <section class="p-5">
+        <div class="container-fluid">
         <div class="col-md">
             <div>
-                <h2 class="text-center text-light" onClick="parent.location='http://localhost:3000/ReactDeploy'">Create Project</h2>
-
-                <input type=button onClick="parent.location='http://localhost:3000/ReactDeploy'"
-                       value='click here'>
+                <h2 class="text-center text-light">Create Project</h2>
                 <p class="text-secondary">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                     when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not
                     only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
@@ -53,11 +50,11 @@
                     PageMaker including versions of Lorem Ipsum. </p>
                 <div class="d-grid gap-2 col-6 mx-auto">
                     <a href = "{%url 'project-create'%}"class="btn btn-success btn-lg">
-                        <btn type="button">Create Project</btn>
+                    <btn type="button" >Create Project</btn>
                     </a>
                 </div>
             </div>
         </div>
-    </div>
+        </div>
 </section>
 {% endblock content %}

@@ -1,0 +1,32 @@
+{% extends "projects/base.html" %}
+{%load crispy_forms_tags %}
+{%block page%}
+           <h1 class="text-white center">Create <span class="text-success">Project</span></h1>
+{%endblock%}
+{%block content%}
+
+<div class="section-1-container section-container pad">
+    <div class="container pad">
+        <div class="row">
+            <div class="col-10 offset-1 col-lg-8 offset-lg-2 div-wrapper d-flex justify-content-center align-items-center pad">
+                <div class="div-to-align" style ="padding-top: 100px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;">
+                            <form method="POST" class="bg-light" enctype='multipart/form-data'>
+                                {% csrf_token %}
+            <fieldset class="form-group">
+                <legend class="border-bottom mb-4 p-2"> Project Post</legend>
+                {{ form|crispy }}
+                {{ imageForm| crispy }}
+            </fieldset>
+            <div class="form-group">
+                <button class="btn btn-outline-info p-2" type="submit"> Create</button>
+            </div>
+        </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content%}

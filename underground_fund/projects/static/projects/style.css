@@ -1,0 +1,28 @@
+.center {
+    text-align:center;
+}
+
+.div-wrapper {
+    height: 200px;
+    margin-top: 40px;
+    border: 2px dashed #ddd;
+    border-radius: 8px;
+}
+
+.div-to-align {
+    width: 75%;
+    padding: 40px 20px;
+
+    /* .... */
+}
+
+.pad {
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+}
+
+.dc {
+  color: white;
+}
