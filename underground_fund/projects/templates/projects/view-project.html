@@ -13,7 +13,7 @@
             <h2><a class="article-title" href="{%url 'project-detail' post.id%}">{{ post.title }}</a></h2>
             <p class="article-content">{{ post.description }}</p>
           </div>
-          <a href = "#"class="btn btn-success btn-lg">
+          <a href = "{{post.contract|safe}}"class="btn btn-success btn-lg">
           <btn type="button" >Donate</btn>
           </a>
         </article>
