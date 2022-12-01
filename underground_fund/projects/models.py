@@ -9,7 +9,7 @@ class Projects(models.Model):
     date_posted = models.DateTimeField(default=timezone.now)
     deadline = models.DateTimeField(default=timezone.now)
     author = models.ForeignKey(User, on_delete=models.CASCADE)
-
+    contract = models.CharField(max_length=100, default="#")
     def __str__(self):
         return self.title
     def get_absolute_url(self):

@@ -23,6 +23,19 @@
                             <button class="btn btn-outline-info p-2" type="submit"> Sign Up</button>
                         </div>
                     </form>
+<!--
+                            <form method="POST" class="bg-light ">
+            {%csrf_token%}
+            <fieldset class="form-group">
+                <legend class="border-bottom mb-4 p-2"> Join Today</legend>
+                {{ form|crispy }}
+                {{ f1|crispy }}
+            </fieldset>
+            <div class="form-group">
+                <button class="btn btn-outline-info p-2" type="submit"> Sign Up</button>
+            </div>
+        </form>
+-->
         <div class="border-top pt-3">
             <small class="text-white p-2 text-white">
                 Already have an account? <a class="ml-2" href="#">Sign in</a>

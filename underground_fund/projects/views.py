@@ -43,6 +43,7 @@ class ProjectsDetailView(DetailView):
         context = super().get_context_data(**kwargs)
         # Add in a QuerySet of all the books
         context['images'] = Image.objects.all()
+
         return context
 
 class ProjectsUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
