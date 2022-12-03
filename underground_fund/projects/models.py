@@ -16,5 +16,5 @@ class Projects(models.Model):
         return reverse('project-detail', kwargs={'pk':self.pk})
 
 class Image(models.Model):
-    project = models.ForeignKey(Projects, on_delete=models.CASCADE)
+    project = models.ForeignKey(Projects, on_delete=models.CASCADE, related_name='imageSet')
     image = models.ImageField(default='default_project.jpg', upload_to='project_pics')

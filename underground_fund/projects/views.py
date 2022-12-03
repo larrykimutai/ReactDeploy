@@ -3,8 +3,7 @@ from .models import Projects, Image
 from .forms import ProjectForm, ImageForm
 from django.views.generic import (ListView,
     DetailView,
-    UpdateView,
-    DeleteView)
+    UpdateView)
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from django.http import HttpResponseRedirect
 from django.contrib import messages
@@ -63,16 +62,22 @@ class ProjectsUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
             return True
         return False
 
-class ProjectsDeleteView(DeleteView):
-    model = Projects
-    success_url = '/'
+def update_project(request,pk):
+    project = Projects.objects.get(pk=pk)
+    form = ProjectForm(instance=project)
+    if request.method == "POST":
+        files = request.FILES.getlist("image")
+        if form.is_valid():
+            form.save()
+            messages.success(request, "New Project added")
+            return HttpResponseRedirect("/view")
+        else:
+            print(form.errors)
+    else:
+        form = ProjectForm(instance=project)
+        imageForm = ImageForm()
 
-    def test_func(self):
-        post = self.get_object()
-        if self.request.user == post.author:
-            return True
-        return False
-
+    return render(request, "projects/update_project.html", {"form": form, "imageForm": imageForm})
 
 def create(request):
     context = {

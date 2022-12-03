@@ -13,8 +13,8 @@
             <btn onclick="{{projects.contract|safe}}" type="button" >Donate</btn>
           </a>
           </article>
-          {% for image in images %}
-            <img src="{{ image.image.url }}">
+          {% for image in projects.imageSet.all %}
+            <img src="{{image.image.url}}">
           {% endfor %}
 
 {% endblock content%}
