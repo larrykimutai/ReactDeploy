@@ -28,8 +28,11 @@ Check attached documents (secrets.txt)
 
 ## Installation
 
+Product can be run without any installation using this link **https://undergroundfund-com.ngrok.io**
+
 In order to do transaction, a blockchain wallet is need, in this case MetaMask
 Installation Link: https://metamask.io/download/
+
 
 ## Website Installation 
 **Note: This is only to run the website manually from your machine. Not smart contracts. The donate button will only work as long as servers for smart contracts are live.**
@@ -46,8 +49,9 @@ Create a MetaMask wallet, or login to previous one.
 MetaMask will need to be set to Goerli test net in order to perform any transaction, this will be done by clicking the MetaMask extension icon(may take a few seconds to open), clicking the center tab that says “Ethereum Mainnet,” and changing it to “Goerli Test Network.”
 Now obtain goerli testnet test Ethere from a faucet: https://goerlifaucet.com/ (If having trouble, contact Larry Langat)
 
+## User Manual
+Before doing any actions on the website, be sure to register a account. Once an account has been created you can view your profile to see you username. There is not much implementationfor profiles past this point. You will be able to create project and view existing projects. As sited in website installation you will not be able to access through the donate button if you run the website locally. You will have to use the link provided here  **https://undergroundfund-com.ngrok.io** for those features on the website. 
 ## Maintainers
-
 Current Maintainers:
 Sean Tisdale
 Javeyon Vaugh
