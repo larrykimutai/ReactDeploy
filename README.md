@@ -50,7 +50,11 @@ MetaMask will need to be set to Goerli test net in order to perform any transact
 Now obtain goerli testnet test Ethere from a faucet: https://goerlifaucet.com/ (If having trouble, contact Larry Langat)
 
 ## User Manual
-Before doing any actions on the website, be sure to register a account. Once an account has been created you can view your profile to see you username. There is not much implementationfor profiles past this point. You will be able to create project and view existing projects. As sited in website installation you will not be able to access through the donate button if you run the website locally. You will have to use the link provided here  **https://undergroundfund-com.ngrok.io** for those features on the website. 
+#Profile and Project Creation
+Before doing any actions on the website, be sure to register a account. Once an account has been created you can view your profile to see you username. There is not much implementationfor profiles past this point. You will be able to create project and view existing projects. As sited in website installation you will not be able to access through the donate button if you run the website locally. You will have to use the link provided here  **https://undergroundfund-com.ngrok.io** for those features on the website.
+
+# Donations 
+When viewing a project that you would like to click the donate button and you will be taken to our donation portal. There you can donate first connecting to metamask and logging into it. After that you can enter any amount of ethereum that is in your account and click "donate" it will add the finds to our smart contract. Once that is done you can press the donate button to send the funds to the creator or press deny to sends the funds back to you. 
 ## Maintainers
 Current Maintainers:
 Sean Tisdale
